@@ -111,6 +111,7 @@ header {
 	color: #fff;
 	font-family: fantasy, sans-serif;
 	font-size: 1.7em;
+	margin-left: 20px
 }
 
 
@@ -129,11 +130,12 @@ header {
 #menuHrefs a {
 	padding: 7px;
 	border-radius: 5px;
-	margin-right: 5px;
+	margin-left: 27.3px;
 	color: #e17109;
 	font-family: fantasy;
 	letter-spacing: 1.5px;
 	font-size: 20px
+		
 }
 
 
@@ -154,12 +156,14 @@ header {
 	width: 50%;
 	margin-top: 20px;
 	margin-left: 422px;
+	align-content: center;
 }
 
 #wrapper #articles {
 	float: left;
 	width: 81%;
 	margin-left: 10.3%;
+	align-content: center;
 }
 
 #wrapper #articles article {
@@ -171,6 +175,7 @@ header {
 	background-color: white;
 	margin-right: 2%;
 	min-height: 400px;
+	align-content: center;
 }
 
 
@@ -242,6 +247,7 @@ header {
 	background-color: #fff;
 	margin-right: 2%;
 	height: 330px;
+	margin-left: -20%
 }
 #article-1 h2{
 	width: auto;
@@ -298,6 +304,8 @@ header {
 	background-color: #fff;
 	margin-right: 2%;
 	height: 330px;
+	margin-top: -48.3%;
+	margin-left: 61%
 }
 #article-2 h2{
 	width: auto;
@@ -307,6 +315,7 @@ header {
 	margin-left: 29.3%;
 	font-family: fantasy;
 	letter-spacing: 2.3px;
+	margin-left: 92px;
 }
 #article-2 h1{
 	width: auto;
@@ -345,6 +354,7 @@ header {
 #article-2 a:hover {
 	background-color: #4186a8;
 }
+
 /*Начало фото-панорамы*/
 
 #main_soc_block {
