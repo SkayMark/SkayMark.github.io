@@ -1,0 +1,677 @@
+@charset "utf-8";
+
+/* * - означает, что св-ва применяются ко всему документу*/
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	/*Убираем голубую линию вокруг поиска*/
+}
+
+html {
+	height: 100%
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	color: #333;
+	background-image: url(../images/gradient2.png);
+	font-size: 1em;
+	font-family: "Segoe UI", sans-serif;
+	line-height: 135%
+}
+
+
+/* Блок стилей ссылки*/
+
+a {
+	color: #e17109;
+	text-decoration: none;
+	transition: all.6s ease;
+	border-radius: 5px;
+	padding: 7px;
+}
+
+
+/*Блок стилей ссылки при наведении курсора*/
+
+a:hover {
+	color:  #e17109;
+	background-color: #362311;
+}
+
+
+/* Блок стилей ссылки при нажатии*/
+
+a: active {
+	color: brown
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto\9;
+	/* Корректное отображение для explorer*/
+}
+
+hr {
+	display: block;
+	border: 0;
+	height: 1px;
+	border-top: 1px solid silver;
+	padding: 0;
+}
+
+
+/*До этой строки были глобальные стили*/
+
+.left {
+	float: left
+}
+
+.right {
+	float: right
+}
+
+.clear {
+	clear: both
+}
+
+
+/*Блок стилей выделения курсором*/
+
+::selection {
+	background:  #e9a571;
+}
+
+header,
+footer {
+	width: 98%;
+	background-color: #fff;
+	padding: 1%;
+	float: left;
+}
+
+header {
+	border-bottom: 2px solid silver;
+	padding: 1%''
+}
+
+#menu {}
+
+#logo {
+	font-size: 2em;
+	font-family: fantasy;
+	color: #C9263F;
+}
+#Boss {
+	margin-left: 40px;
+	font-size: 1.6em;
+	font-family: fantasy;
+}
+
+
+/*Стили для центера*/
+
+#menu {
+	color: #ffffff;
+	font-family: fantasy;
+	font-size: 1.7em;
+}
+
+
+/*Нижняя палка для меню*/
+
+#menu hr {
+	width: 500px;
+	max-width: 100%;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+
+/*Блок стилей для ссылок в разделах*/
+
+#menuHrefs a {
+	padding: 7px;
+	border-radius: 5px;
+	margin-right: 5px;
+	color: #e17109;
+	font-family: fantasy;
+	letter-spacing: 1.5px;
+	font-size: 20px
+	
+}
+
+
+/*Обводка для разделов при наведении курсора*/
+
+#menuHrefs a:hover {
+	background-color: white;
+}
+
+
+/*Конец меню*/
+
+
+/*Начало Центера и анонсов со статьями*/
+
+#wrapper {
+	float: left;
+	width: 50%;
+	margin-top: 20px;
+	margin-left: 422px;
+}
+
+#wrapper #articles {
+	float: left;
+	width: 81%;
+	margin-left: 10.3%;
+}
+
+#wrapper #articles article {
+	float: left;
+	width: 31.3333%;
+	border: 1px solid silver;
+	box-sizing: border-box;
+	border-radius: 5px;
+	background-color: white;
+	margin-right: 2%;
+	min-height: 400px;
+}
+
+
+/*Блок стилей для картинок в центре*/
+
+#wrapper #articles article img {
+	width: 100%;
+	height: 200px;
+	border-radius: 2px 2px 0px 0px;
+	border-bottom: 1px solid silver;
+	margin-bottom: 10px;
+}
+
+
+/*Блок стилей для заголовков и прочего картинок в центре*/
+
+
+
+#wrapper #articles article h2 {
+	width: 90%;
+	margin-left: 43%;
+	font-weight: normal;
+	font-size: 1.7em;
+	color: black;
+}
+
+#wrapper #articles article h1 {
+	width: 90%;
+	margin-left: 27%;
+	font-weight: normal;
+	font-size: 1em color: #575b57;
+}
+
+
+/*Блок стилей для описания картинок*/
+
+#wrapper #articles article p {
+	width: 80%;
+	margin-left: 30%;
+	text-indent: 3em/*Перемещение первой строки*/
+}
+
+
+/*Блок стилей для ссылкu "Узнать больше"*/
+
+#wrapper #articles article a {
+	padding: 10px 5px;
+	background-color: white;
+	margin-left: 5%;
+	border-radius: 5px;
+	/*Закругленные края на фоне у ссылок "Узнать больше"*/
+	color: aliceblue;
+	float: left;
+	margin-top: 231px;
+}
+
+
+/*Эффект при наведении крусора на сслыку "Узнать больше"*/
+
+#wrapper #articles article a:hover {
+	background-color: #fff;
+}
+
+
+/*Центральный блок сайта(Картинка выше футера)*/
+
+#main_soc_block {
+	width: 100%;
+	padding: 2% 0;
+	/*Высота ширина*/
+	border-bottom: 2px solid silver;
+	border-top: 2px solid silver;
+	margin: 20px 0;
+	
+	/*Картинка к центр.блоку*/
+	background: url('../images/additive.jpg') repeat-x center 0;
+	/*Повторение только по оси Х*/
+	height: 210px;
+}
+
+
+/*Текст внутри соц. блока*/
+
+#main_soc_block_in {
+	text-align: center;
+	padding: 1%;
+	height: 100px;
+	background-color: #4186a8;
+	border: 1px solid silver;
+	border-radius: 7px;
+	width: 500px;
+	margin-left: 1152px;
+	margin-top: -34px;
+}
+
+#main_soc_block_in a {
+	float: left;
+	padding: 5px;
+	background-color: ;
+	border: 1px solid silver;
+	border-radius: 6px;
+	color: aliceblue;
+	margin-left: 170px;
+	margin-top: 20px;
+}
+#main_soc_block_in a:hover {
+	background-color: #35810c;
+	
+}
+
+#Nuparu{
+	float: left;
+	width: 31.3333%;
+	border: 1px solid silver;
+	box-sizing: border-box;
+	border-radius: 5px;
+	background-color: #fff;
+	margin-right: 2%;
+	min-height: 350px;
+}
+#Nuparu h2{
+	width: auto;
+	font-size: 1.7em;
+	font-weight: normal;
+	color: grey;
+	margin-left: 29.3%;
+	font-family: fantasy;
+	letter-spacing: 2.3px;
+}
+#Nuparu h1{
+	width: auto;
+	font-size: 1.3em;
+	font-weight: normal;
+	color: black;
+	margin-left: 9%;
+	margin-top: 5px;
+}
+#Nuparu p{
+	width: auto;
+	font-size: 1.1em;
+	font-weight: normal;
+	color: black;
+	margin-left: 21.6%;
+	margin-top: 5px;
+}
+#Nuparu img{
+
+	width: 100%;
+	height: 200px;
+	border-radius: 5px 5px 0px 0px;
+	border-bottom: 1px solid silver;
+	margin-bottom: 10px;
+}
+#Nuparu a {
+	padding: 10px 5px;
+	background-color: #e17109;
+	margin-left: 22.7%;
+	border-radius: 5px;
+	/*Закругленные края на фоне у ссылок "Узнать больше"*/
+	color: #fff;
+	float: left;
+	margin-top: 5%;
+}
+#Nuparu a:hover {
+	background-color: #4186a8;
+}
+#Jaller{
+	float: left;
+	width: 31.3333%;
+	border: 1px solid silver;
+	box-sizing: border-box;
+	border-radius: 5px;
+	background-color: white;
+	margin-right: 2%;
+	min-height: 350px;
+}
+#Jaller h2{
+	width: auto;
+	font-size: 1.7em;
+	font-weight: normal;
+	font-family: fantasy;
+	color: #a02b2b;
+	margin-left: 21%;
+	letter-spacing: 2.3px;
+}
+#Jaller h1{
+	width: auto;
+	font-size: 1.3em;
+	font-weight: normal;
+	color: black;
+	margin-left: 11%;
+	margin-top: 5px;
+}
+#Jaller p{
+	width: auto;
+	font-size: 1.3em;
+	font-weight: normal;
+	font-family: 'Russo One', sans-serif;
+	color: gold;
+	margin-top: 6px;
+	margin-left: 34.5%;
+}
+#Jaller img{
+
+	width: 100%;
+	height: 200px;
+	border-radius: 5px 5px 0px 0px;
+	border-bottom: 1px solid silver;
+	margin-bottom: 10px;
+}
+#Jaller a {
+	padding: 10px 5px;
+	background-color: #e17109;
+	margin-left: 22.7%;
+	border-radius: 5px;
+	/*Закругленные края на фоне у ссылок "Узнать больше"*/
+	color: #fff;
+	float: left;
+	margin-top: 4.5%;
+}
+#Jaller a:hover {
+	background-color:  #4186a8;
+}
+#Kongu{
+	float: left;
+	width: 31.3333%;
+	border: 1px solid silver;
+	box-sizing: border-box;
+	border-radius: 5px;
+	background-color: white;
+	margin-right: 2%;
+	min-height: 350px;
+}
+#Kongu h2{
+	width: auto;
+	font-size: 1.7em;
+	font-weight: normal;
+	font-family: fantasy;
+	color: #35810c;
+	margin-left: 33.6%;
+	letter-spacing: 2px;
+}
+#Kongu h1{
+	width: auto;
+	font-size: 1.3em;
+	font-weight: normal;
+	color: black;
+	margin-left: 5%;
+	margin-top: 5px;
+}
+#Kongu p{
+	width: auto;
+	font-size: 1.1em;
+	font-weight: normal;
+	color: black;
+	margin-left: 22.4%;
+	margin-top: 5px;
+}
+#Kongu img{
+
+	width: 100%;
+	height: 200px;
+	border-radius: 5px 5px 0px 0px;
+	border-bottom: 1px solid silver;
+	margin-bottom: 10px;
+}
+#Kongu a {
+	padding: 10px 5px;
+	background-color: #e17109;
+	margin-left: 22.7%;
+	border-radius: 5px;
+	/*Закругленные края на фоне у ссылок "Узнать больше"*/
+	color: #fff;
+	float: left;
+	margin-top: 5%;
+}
+#Kongu a:hover {
+	background-color: #4186a8;
+}
+#Matoro{
+	float: left;
+	width: 31.3333%;
+	border: 1px solid silver;
+	box-sizing: border-box;
+	border-radius: 5px;
+	background-color: white;
+	margin-right: 2%;
+	min-height: 350px;
+}
+#Matoro h2{
+	width: auto;
+	font-size: 1.7em;
+	font-weight: normal;
+	font-family: fantasy;
+	color: #a2bcf5;
+	margin-left: 28%;
+	letter-spacing: 2.3px;
+	
+}
+#Matoro h1{
+	width: auto;
+	font-size: 1.3em;
+	font-weight: normal;
+	color: black;
+	margin-left: 6.9%;
+	margin-top: 5px;
+}
+#Matoro p{
+	width: auto;
+	font-size: 1.1em;
+	font-weight: normal;
+	color: black;
+	margin-left: 23.5%;
+	margin-top: 5px;
+}
+#Matoro img{
+
+	width: 100%;
+	height: 200px;
+	border-radius: 5px 5px 0px 0px;
+	border-bottom: 1px solid silver;
+	margin-bottom: 10px;
+}
+#Matoro a {
+	padding: 10px 5px;
+	background-color: #e17109;
+	margin-left: 22.7%;
+	border-radius: 5px;
+	/*Закругленные края на фоне у ссылок "Узнать больше"*/
+	color: #fff;
+	float: left;
+	margin-top: 5%;
+}
+#Matoro a:hover {
+	background-color:  #4186a8;
+}
+#Hahli{
+	float: left;
+	width: 31.3333%;
+	border: 1px solid silver;
+	box-sizing: border-box;
+	border-radius: 5px;
+	background-color: white;
+	margin-right: 2%;
+	min-height: 350px;
+}
+#Hahli h2{
+	width: auto;
+	font-size: 1.7em;
+	font-weight: normal;
+	font-family: fantasy;
+	letter-spacing: 2.3px;
+	color: #4071cd;
+	margin-left: 35.5%;
+}
+#Hahli h1{
+	width: auto;
+	font-size: 1.3em;
+	font-weight: normal;
+	color: black;
+	margin-left: 11%;
+	margin-top: 5px;
+}
+#Hahli p{
+	width: auto;
+	font-size: 1.1em;
+	font-weight: normal;
+	color: black;
+	margin-left: 24%;
+	margin-top: 5px;
+}
+#Hahli img{
+
+	width: 100%;
+	height: 200px;
+	border-radius: 5px 5px 0px 0px;
+	border-bottom: 1px solid silver;
+	margin-bottom: 10px;
+}
+#Hahli a {
+	padding: 10px 5px;
+	background-color: #e17109;
+	margin-left: 22.7%;
+	border-radius: 5px;
+	/*Закругленные края на фоне у ссылок "Узнать больше"*/
+	color: #fff;
+	float: left;
+	margin-top: 5%;
+}
+#Hahli a:hover {
+	background-color: #4186a8;
+}
+#Hewkki{
+	float: left;
+	width: 31.3333%;
+	border: 1px solid silver;
+	box-sizing: border-box;
+	border-radius: 5px;
+	background-color: white;
+	margin-right: 2%;
+	min-height: 350px;
+}
+#Hewkki h2{
+	width: auto;
+	font-size: 1.7em;
+	font-weight: normal;
+	font-family: fantasy;
+	letter-spacing: 2.3px;
+	color: orangered;
+	margin-left: 29.9%;
+}
+#Hewkki h1{
+	width: auto;
+	font-size: 1.3em;
+	font-weight: normal;
+	color: black;
+	margin-left: 7.6%;
+	margin-top: 5px;
+}
+#Hewkki p{
+	width: auto;
+	font-size: 1.1em;
+	font-weight: normal;
+	color: black;
+	margin-left: 5.6%;
+	margin-top: 5px;
+}
+#Hewkki img{
+
+	width: 100%;
+	height: 200px;
+	border-radius: 5px 5px 0px 0px;
+	border-bottom: 1px solid silver;
+	margin-bottom: 10px;
+}
+#Hewkki a {
+	padding: 10px 5px;
+	background-color: #e17109;
+	margin-left: 22.7%;
+	border-radius: 5px;
+	/*Закругленные края на фоне у ссылок "Узнать больше"*/
+	color: #fff;
+	float: left;
+	margin-top: 5%;
+}
+#Hewkki a:hover {
+	background-color:  #4186a8;
+}
+#foter{
+	border-top: 1px solid silver;
+	padding: 2%;
+	text-align: center;
+	margin-right: -16px;
+	margin-left: -16px;
+	margin-top: 5px;
+}
+
+    
+/*Начало футера
+
+footer {
+	border-top: 2px solid silver;
+	margin-top: 10px;
+	padding: 2%;
+	padding-bottom: 2%;
+	text-align: center;
+	
+}
+
+
+/*Иконка ВК
+
+footer img {
+	width: 20%;
+	float: left;
+	margin-right: 5px
+}
+*/
+
+/*Footer переносится вниз*/
+
+#page-wrap:after {
+	content: "";
+	display: block;
+}
+
+footer,
+#page-wrap:after {
+	height: 10px
+}
+
+#page-wrap {
+	min-height: 50%;
+	margin-bottom: 35%;/*Расстояние от соц. блока до футера*/
+}

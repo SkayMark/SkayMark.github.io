@@ -1,0 +1,418 @@
+@charset "utf-8";
+
+/* * - означает, что св-ва применяются ко всему документу*/
+
+* {
+	/*Удаление отступа выше хедера*/
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100%
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	color: #333;
+	background-image: url(../images/gradient2.png);
+	font-size: 1em;
+	font-family: "Segoe UI", sans-serif;
+	line-height: 135%
+}
+
+
+/* Блок стилей ссылки*/
+
+a {
+	color: #e17109;
+	text-decoration: none;
+	transition: all.6s ease;
+	border-radius: 5px;
+	padding: 7px;
+}
+
+
+/*Блок стилей ссылки при наведении курсора*/
+
+a:hover {
+	color: #e17109;
+	background-color: #5b9df9;
+}
+
+
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto;
+	/* Корректное отображение для explorer*/
+}
+
+hr {
+	display: block;
+	border: 0;
+	height: 1px;
+	border-top: 1px solid silver;
+	padding: 0;
+}
+
+
+/*До этой строки были глобальные стили*/
+
+.left {
+	float: left
+}
+
+.right {
+	float: right
+}
+
+.clear {
+	clear: both
+}
+
+
+/*Блок стилей выделения курсором*/
+
+::selection {
+	background: #e9a571;
+}
+
+header,
+footer {
+	width: 98%;
+	background-color: #fff;
+	padding: 1%;
+	float: left;
+}
+
+header {
+	border-bottom: 2px solid silver;
+	padding: 1%''
+}
+
+#logo {
+	font-size: 2em;
+	font-family: fantasy, sans-serif;
+	color: #35810c;
+}
+
+#Boss {
+	margin-left: 40px;
+	font-size: 1.6em;
+	font-family: fantasy;
+}
+
+
+/*Блок стилей для меню*/
+
+#menu {
+	color: #fff;
+	font-family: fantasy, sans-serif;
+	font-size: 1.7em;
+}
+
+
+/*Нижняя палка для меню*/
+
+#menu hr {
+	width: 500px;
+	max-width: 100%;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+
+/*Блок стилей для ссылок в разделах*/
+
+#menuHrefs a {
+	padding: 7px;
+	border-radius: 5px;
+	margin-right: 5px;
+	color: #e17109;
+	font-family: fantasy;
+	letter-spacing: 1.5px;
+	font-size: 20px
+}
+
+
+/*Обводка для разделов при наведении курсора*/
+
+#menuHrefs a:hover {
+	background-color: #e7e7e3;
+}
+
+
+/*Конец меню*/
+
+
+/*Начало центра и статей*/
+
+#wrapper {
+	float: left;
+	width: 50%;
+	margin-top: 20px;
+	margin-left: 422px;
+}
+
+#wrapper #articles {
+	float: left;
+	width: 81%;
+	margin-left: 10.3%;
+}
+
+#wrapper #articles article {
+	float: left;
+	width: 31.3333%;
+	border: 1px solid silver;
+	box-sizing: border-box;
+	border-radius: 5px;
+	background-color: white;
+	margin-right: 2%;
+	min-height: 400px;
+}
+
+
+/*Блок стилей для картинок в центре*/
+
+#wrapper #articles article img {
+	width: 100%;
+	height: 200px;
+	border-radius: 2px 2px 0px 0px;
+	border-bottom: 1px solid silver;
+	margin-bottom: 10px;
+}
+
+
+/*Блок стилей для заголовков и прочего картинок в центре*/
+
+
+
+#wrapper #articles article h2 {
+	width: 90%;
+	margin-left: 43%;
+	font-weight: normal;
+	font-size: 1.7em;
+	color: black;
+}
+
+#wrapper #articles article h1 {
+	width: 90%;
+	margin-left: 27%;
+	font-weight: normal;
+	font-size: 1em color: #575b57;
+}
+
+
+/*Блок стилей для описания картинок*/
+
+#wrapper #articles article p {
+	width: 80%;
+	margin-left: 30%;
+	text-indent: 3em/*Перемещение первой строки*/
+}
+
+
+/*Блок стилей для ссылкu "Узнать больше"*/
+
+#wrapper #articles article a {
+	padding: 10px 5px;
+	background-color: white;
+	margin-left: 5%;
+	border-radius: 5px;
+	/*Закругленные края на фоне у ссылок "Узнать больше"*/
+	color: aliceblue;
+	float: left;
+	margin-top: 231px;
+}
+
+
+/*Эффект при наведении крусора на сслыку "Узнать больше"*/
+
+#wrapper #articles article a:hover {
+	background-color: #fff;
+}
+#article-1{
+	float: left;
+	width: 60%;
+	border: 1px solid silver;
+	box-sizing: border-box;
+	border-radius: 5px;
+	background-color: #fff;
+	margin-right: 2%;
+	height: 330px;
+}
+#article-1 h2{
+	width: auto;
+	font-size: 1.7em;
+	font-weight: normal;
+	color: grey;
+	margin-left: 29.3%;
+	font-family: fantasy;
+	letter-spacing: 2.3px;
+}
+#article-1 h1{
+	width: auto;
+	font-size: 1.3em;
+	font-weight: normal;
+	color: black;
+	margin-left: 9%;
+	margin-top: 5px;
+}
+#article-1 p{
+	width: auto;
+	font-size: 1.1em;
+	font-weight: normal;
+	color: black;
+	margin-left: 21.6%;
+	margin-top: 5px;
+}
+#article-1 img{
+
+	width: 100%;
+	height: 200px;
+	border-radius: 5px 5px 0px 0px;
+	border-bottom: 1px solid silver;
+	margin-bottom: 10px;
+}
+#article-1 a {
+	padding: 10px 5px;
+	background-color: #e17109;
+	margin-left: 35.4%;
+	border-radius: 5px;
+	/*Закругленные края на фоне у ссылок "Узнать больше"*/
+	color: #fff;
+	float: left;
+	margin-top: 5%;
+}
+#article-1 a:hover {
+	background-color: #4186a8;
+}
+#article-2{
+	float: left;
+	width: 60%;
+	border: 1px solid silver;
+	box-sizing: border-box;
+	border-radius: 5px;
+	background-color: #fff;
+	margin-right: 2%;
+	height: 330px;
+}
+#article-2 h2{
+	width: auto;
+	font-size: 1.7em;
+	font-weight: normal;
+	color: grey;
+	margin-left: 29.3%;
+	font-family: fantasy;
+	letter-spacing: 2.3px;
+}
+#article-2 h1{
+	width: auto;
+	font-size: 1.3em;
+	font-weight: normal;
+	color: black;
+	margin-left: 9%;
+	margin-top: 5px;
+}
+#article-2 p{
+	width: auto;
+	font-size: 1.1em;
+	font-weight: normal;
+	color: black;
+	margin-left: 21.6%;
+	margin-top: 5px;
+}
+#article-2 img{
+
+	width: 100%;
+	height: 200px;
+	border-radius: 5px 5px 0px 0px;
+	border-bottom: 1px solid silver;
+	margin-bottom: 10px;
+}
+#article-2 a {
+	padding: 10px 5px;
+	background-color: #e17109;
+	margin-left: 35.4%;
+	border-radius: 5px;
+	/*Закругленные края на фоне у ссылок "Узнать больше"*/
+	color: #fff;
+	float: left;
+	margin-top: 5%;
+}
+#article-2 a:hover {
+	background-color: #4186a8;
+}
+/*Начало фото-панорамы*/
+
+#main_soc_block {
+	width: 100%;
+	padding: 2% 0;
+	/*Высота ширина*/
+	border-bottom: 2px solid silver;
+	border-top: 2px solid silver;
+	margin: 20px 0;
+	float: left;
+	/*Картинка к центр.блоку*/
+	background: url('../images/additive.jpg') repeat-x center 0;
+	/*Повторение только по оси Х*/
+	height: 200px;
+	margin-top: 390px
+}
+
+
+/*Текст внутри соц. блока*/
+
+#main_soc_block_in {
+	text-align: center;
+	padding: 1%;
+	height: 100px;
+	background-color: #4186a8;
+	border: 1px solid silver;
+	border-radius: 7px;
+	width: 500px;
+	margin-left: 1152px;
+	margin-top: -34px;
+}
+/*Ссылка соц блока"Кто такие биониклы"*/
+#main_soc_block_in a {
+	float: left;
+	padding: 5px;
+	background-color: ;
+	border: 1px solid silver;
+	border-radius: 6px;
+	color: aliceblue;
+	margin-left: 170px;
+	margin-top: 20px;
+}
+
+#main_soc_block_in a:hover {
+	background-color: #35810c;
+}
+/*Конец фото-панорамы*/
+
+/*Начало футера*/
+
+footer {
+	width: 100%;
+	float: center;
+	padding: 0%;
+	border-top: 2px solid silver;
+	margin-top: 50px;
+	height: 10px;
+}
+
+footer #rights {
+	text-align: center;
+	width: 100%;
+	height: 70px;
+	background-image: url(../images/gradient2.png);
+}
+
+footer #creator {
+	text-align: left;
+	width: 100%;
+	background-image: url(../images/gradient2.png);
+}
