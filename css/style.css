@@ -16,7 +16,7 @@ body {
 	width: 100%;
 	height: 100%;
 	color: #333;
-	background-image: url(../images/gradient2.png);
+	background-image: url(../images/background-city-flhd-1.png);
 	font-size: 1em;
 	font-family: "Segoe UI", sans-serif;
 	line-height: 135%
@@ -30,7 +30,7 @@ a {
 	text-decoration: none;
 	transition: all.6s ease;
 	border-radius: 5px;
-	padding: 7px;
+	padding: 5px;
 }
 
 
@@ -38,7 +38,7 @@ a {
 
 a:hover {
 	color: #e17109;
-	background-color: #5b9df9;
+	background-color: #54c967;
 }
 
 
@@ -79,8 +79,7 @@ hr {
 	background: #e9a571;
 }
 
-header,
-footer {
+header {
 	width: 98%;
 	background-color: #fff;
 	padding: 1%;
@@ -102,6 +101,20 @@ header {
 	margin-left: 40px;
 	font-size: 1.6em;
 	font-family: fantasy;
+}
+
+#about {
+	float: right;
+	font-size: 1.6em;
+	font-family: fantasy;
+	margin-top: -4px;
+}
+#about a {
+	color: red;
+	text-decoration: none;
+	transition: all.6s ease;
+	border-radius: 5px;
+	padding: 5px;
 }
 
 
@@ -366,63 +379,20 @@ header {
 	margin: 20px 0;
 	float: left;
 	/*Картинка к центр.блоку*/
-	background: url('../images/additive.jpg') repeat-x center 0;
+	background: url('../images/additive-3.png') repeat-x center 0;
 	/*Повторение только по оси Х*/
 	height: 200px;
 	margin-top: 390px
 }
 
 
-/*Текст внутри соц. блока*/
 
-#main_soc_block_in {
-	text-align: center;
-	padding: 1%;
-	height: 100px;
-	background-color: #4186a8;
-	border: 1px solid silver;
-	border-radius: 7px;
-	width: 500px;
-	margin-left: 1152px;
-	margin-top: -34px;
-}
-/*Ссылка соц блока"Кто такие биониклы"*/
-#main_soc_block_in a {
-	float: left;
-	padding: 5px;
-	background-color: ;
-	border: 1px solid silver;
-	border-radius: 6px;
-	color: aliceblue;
-	margin-left: 170px;
-	margin-top: 20px;
-}
-
-#main_soc_block_in a:hover {
-	background-color: #35810c;
-}
 /*Конец фото-панорамы*/
 
-/*Начало футера*/
-
-footer {
-	width: 100%;
-	float: center;
-	padding: 0%;
-	border-top: 2px solid silver;
-	margin-top: 50px;
-	height: 10px;
-}
-
-footer #rights {
+#rights {
+	color: white;
 	text-align: center;
 	width: 100%;
 	height: 70px;
-	background-image: url(../images/gradient2.png);
-}
-
-footer #creator {
-	text-align: left;
-	width: 100%;
-	background-image: url(../images/gradient2.png);
+	background-color: transparent;
 }
