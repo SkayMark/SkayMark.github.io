@@ -97,26 +97,27 @@ header {
 	color: #35810c;
 }
 
-#Boss {
+.Boss {
 	margin-left: 40px;
 	font-size: 1.6em;
 	font-family: fantasy;
 }
+.Boss:hover {
+	background-color:  #f89d57;
+}
 
-#about {
+.about {
 	float: right;
 	font-size: 1.6em;
 	font-family: fantasy;
 	margin-top: -4px;
 }
-#about a {
-	color: red;
-	text-decoration: none;
-	transition: all.6s ease;
-	border-radius: 5px;
-	padding: 5px;
-}
 
+.about:hover {
+	color: #e17109;
+	background-color: #f89d57;
+	height: 21px;
+}
 
 /*Блок стилей для меню*/
 
@@ -155,7 +156,7 @@ header {
 /*Обводка для разделов при наведении курсора*/
 
 #menuHrefs a:hover {
-	background-color: #e7e7e3;
+	background-color: #eeedec;
 }
 
 

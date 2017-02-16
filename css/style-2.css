@@ -3,10 +3,9 @@
 /* * - означает, что св-ва применяются ко всему документу*/
 
 * {
+	/*Удаление отступа выше хедера*/
 	margin: 0;
 	padding: 0;
-	outline: none;
-	/*Убираем голубую линию вокруг поиска*/
 }
 
 html {
@@ -31,23 +30,17 @@ a {
 	text-decoration: none;
 	transition: all.6s ease;
 	border-radius: 5px;
-	padding: 7px;
+	padding: 5px;
 }
 
 
 /*Блок стилей ссылки при наведении курсора*/
 
 a:hover {
-	color:  #e17109;
-	background-color: #362311;
+	color: #e17109;
+	background-color: #54c967;
 }
 
-
-/* Блок стилей ссылки при нажатии*/
-
-a: active {
-	color: brown
-}
 
 img {
 	max-width: 100%;
@@ -100,25 +93,41 @@ header {
 }
 
 #menu {}
-
 #logo {
 	font-size: 2em;
-	font-family: fantasy;
-	color: #C9263F;
+	font-family: fantasy, sans-serif;
+	color: #35810c;
 }
-#Boss {
+
+.Boss {
 	margin-left: 40px;
 	font-size: 1.6em;
 	font-family: fantasy;
 }
+.Boss:hover {
+	background-color:  #f89d57;
+}
 
+.about {
+	float: right;
+	font-size: 1.6em;
+	font-family: fantasy;
+	margin-top: -4px;
+}
 
-/*Стили для центера*/
+.about:hover {
+	color: #e17109;
+	background-color: #f89d57;
+	height: 21px;
+}
+
+/*Блок стилей для меню*/
 
 #menu {
-	color: #ffffff;
-	font-family: fantasy;
+	color: #fff;
+	font-family: fantasy, sans-serif;
 	font-size: 1.7em;
+	margin-left: 20px
 }
 
 
@@ -137,24 +146,26 @@ header {
 #menuHrefs a {
 	padding: 7px;
 	border-radius: 5px;
-	margin-right: 5px;
+	margin-left: 27.3px;
 	color: #e17109;
 	font-family: fantasy;
 	letter-spacing: 1.5px;
 	font-size: 20px
-	
+		
 }
 
 
 /*Обводка для разделов при наведении курсора*/
 
 #menuHrefs a:hover {
-	background-color: white;
+	background-color: #eeedec;
 }
 
 
 /*Конец меню*/
 
+
+/*Начало центра и статей*/
 
 /*Начало Центера и анонсов со статьями*/
 
@@ -253,41 +264,12 @@ header {
 	border-bottom: 2px solid silver;
 	border-top: 2px solid silver;
 	margin: 20px 0;
-	
-	/*Картинка к центр.блоку*/
-	background: url('../images/additive.jpg') repeat-x center 0;
-	/*Повторение только по оси Х*/
-	height: 210px;
-}
-
-
-/*Текст внутри соц. блока*/
-
-#main_soc_block_in {
-	text-align: center;
-	padding: 1%;
-	height: 100px;
-	background-color: #4186a8;
-	border: 1px solid silver;
-	border-radius: 7px;
-	width: 500px;
-	margin-left: 1152px;
-	margin-top: -34px;
-}
-
-#main_soc_block_in a {
 	float: left;
-	padding: 5px;
-	background-color: ;
-	border: 1px solid silver;
-	border-radius: 6px;
-	color: aliceblue;
-	margin-left: 170px;
-	margin-top: 20px;
-}
-#main_soc_block_in a:hover {
-	background-color: #35810c;
-	
+	/*Картинка к центр.блоку*/
+	background: url('../images/additive-3.png') repeat-x center 0;
+	/*Повторение только по оси Х*/
+	height: 200px;
+	margin-top: 40px
 }
 
 #Nuparu{
@@ -628,50 +610,10 @@ header {
 #Hewkki a:hover {
 	background-color:  #4186a8;
 }
-#foter{
-	border-top: 1px solid silver;
-	padding: 2%;
+#rights {
+	color: white;
 	text-align: center;
-	margin-right: -16px;
-	margin-left: -16px;
-	margin-top: 5px;
-}
-
-    
-/*Начало футера
-
-footer {
-	border-top: 2px solid silver;
-	margin-top: 10px;
-	padding: 2%;
-	padding-bottom: 2%;
-	text-align: center;
-	
-}
-
-
-/*Иконка ВК
-
-footer img {
-	width: 20%;
-	float: left;
-	margin-right: 5px
-}
-*/
-
-/*Footer переносится вниз*/
-
-#page-wrap:after {
-	content: "";
-	display: block;
-}
-
-footer,
-#page-wrap:after {
-	height: 10px
-}
-
-#page-wrap {
-	min-height: 50%;
-	margin-bottom: 35%;/*Расстояние от соц. блока до футера*/
+	width: 100%;
+	height: 70px;
+	background-color: transparent;
 }
