@@ -161,7 +161,21 @@ header {
 
 
 /*Конец меню*/
-
+#description {
+	text-align: center;
+	margin-top: 30px;
+	font-family: fantasy;
+	color: #f3f3f5;
+	letter-spacing: 0.4px
+	
+}
+#BionicleRu {
+	font-family: 'Russo One', sans-serif;
+	color: #4186a8;
+	letter-spacing: 1.58px;
+	font-size: 26px;
+		
+}
 
 /*Начало центра и статей*/
 
@@ -169,13 +183,13 @@ header {
 	float: left;
 	width: 50%;
 	margin-top: 20px;
-	margin-left: 422px;
+	margin-left: 448px;
 	align-content: center;
 }
 
 #wrapper #articles {
 	float: left;
-	width: 81%;
+	width: 75%;
 	margin-left: 10.3%;
 	align-content: center;
 }
@@ -268,9 +282,9 @@ header {
 	font-size: 1.7em;
 	font-weight: normal;
 	color: grey;
-	margin-left: 29.3%;
 	font-family: fantasy;
 	letter-spacing: 2.3px;
+	text-align: center;
 }
 #article-1 h1{
 	width: auto;
@@ -299,7 +313,7 @@ header {
 #article-1 a {
 	padding: 10px 5px;
 	background-color: #e17109;
-	margin-left: 35.4%;
+	margin-left: 34%;
 	border-radius: 5px;
 	/*Закругленные края на фоне у ссылок "Узнать больше"*/
 	color: #fff;
@@ -318,7 +332,7 @@ header {
 	background-color: #fff;
 	margin-right: 2%;
 	height: 330px;
-	margin-top: -48.3%;
+	margin-top: -52%;
 	margin-left: 61%
 }
 #article-2 h2{
@@ -326,10 +340,9 @@ header {
 	font-size: 1.7em;
 	font-weight: normal;
 	color: grey;
-	margin-left: 29.3%;
 	font-family: fantasy;
 	letter-spacing: 2.3px;
-	margin-left: 92px;
+	text-align: center;
 }
 #article-2 h1{
 	width: auto;
@@ -358,7 +371,7 @@ header {
 #article-2 a {
 	padding: 10px 5px;
 	background-color: #e17109;
-	margin-left: 35.4%;
+	margin-left: 34.7%;
 	border-radius: 5px;
 	/*Закругленные края на фоне у ссылок "Узнать больше"*/
 	color: #fff;
